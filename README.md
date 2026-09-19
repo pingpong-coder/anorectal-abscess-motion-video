@@ -55,6 +55,7 @@ FullVideo duration: **4260 frames @ 30fps (~142 seconds)**.
 - Audio is intentionally not bundled.
 - Each scene contains a commented placeholder such as:
   - `/* <Audio src={staticFile('narration/scene01.mp3')} /> */`
-- Use `voiceover/` for recording prep:
+- Place final recorded audio files under `public/narration/sceneXX.mp3` to match `staticFile('narration/...')`.
+- Use `voiceover/` for script prep:
   - `voiceover/README.md`
   - `voiceover/SceneXX_*.txt` (Arabic original + English text per scene)

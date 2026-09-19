@@ -6,7 +6,7 @@ export const BilingualText: React.FC<{
   ar: string;
   enSize?: number;
   arSize?: number;
-  align?: 'left' | 'center';
+  align?: 'left' | 'center' | 'right';
 }> = ({en, ar, enSize = 34, arSize = 32, align = 'left'}) => {
   return (
     <div style={{display: 'flex', flexDirection: 'column', gap: 8, textAlign: align}}>
