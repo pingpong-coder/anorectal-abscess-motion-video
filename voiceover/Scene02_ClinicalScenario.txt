@@ -1,0 +1,5 @@
+Arabic:
+حالة سريرية: مريض ذكر يعاني ألمًا شديدًا حول الشرج منذ يومين، يزداد مع الجلوس والحركة. بالفحص: حمّى، تسرّع قلب، إيلام موضعي، وربما احمرار أو تورّم.
+
+English:
+Clinical scenario: Male patient with severe perianal pain for two days, worse with sitting and movement. Findings include fever, tachycardia, local tenderness, and possibly erythema or swelling.

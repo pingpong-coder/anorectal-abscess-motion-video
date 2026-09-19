@@ -1,0 +1,5 @@
+Arabic:
+علامات الخطر: ألم شديد متفاقم وغير متناسب مع الفحص الخارجي، حمّى، تسرّع قلب، إيلام عميق، وأعراض جهازية.
+
+English:
+Red flags include severe progressive pain out of proportion to visible findings, fever, tachycardia, deep tenderness, and systemic symptoms.

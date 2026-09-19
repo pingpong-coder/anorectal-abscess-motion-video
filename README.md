@@ -1,54 +1,60 @@
-# Remotion video
+# Pus Under Pressure: The Anorectal Emergency (Remotion)
 
-<p align="center">
-  <a href="https://github.com/remotion-dev/logo">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-dark.apng">
-      <img alt="Animated Remotion Logo" src="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-light.gif">
-    </picture>
-  </a>
-</p>
+Bilingual (English + Arabic) motion-graphics educational Remotion project for nursing/medical training on anorectal abscess assessment and urgent care priorities.
 
-Welcome to your Remotion project!
+## Quick start
 
-## Commands
-
-**Install Dependencies**
-
-```console
-npm i
+```bash
+npm install
+npm start
 ```
 
-**Start Preview**
+You can also run studio directly:
 
-```console
-npm run dev
+```bash
+npx remotion studio
 ```
 
-**Render video**
+## Render the full video
 
-```console
-npx remotion render
+```bash
+npx remotion render FullVideo out/video.mp4
 ```
 
-**Upgrade Remotion**
+FullVideo duration: **4260 frames @ 30fps (~142 seconds)**.
 
-```console
-npx remotion upgrade
-```
+## Project structure
 
-## Docs
+- `src/index.ts` and `src/Root.tsx` register all compositions.
+- `src/scenes/SceneXX_*.tsx` contains one composition per scene:
+  - Scene01_Hook
+  - Scene02_ClinicalScenario
+  - Scene03_HowAbscessForms
+  - Scene04_AnatomicalLocations
+  - Scene05_RedFlags
+  - Scene06_DangerousComplication
+  - Scene07_NursingAssessment
+  - Scene08_PauseAndThink
+  - Scene09_IncisionAndDrainage
+  - Scene10_Antibiotics
+  - Scene11_PostopCare
+  - Scene12_NursingPriorityQuiz
+  - Scene13_FinalClinicalPearl
+  - Scene14_EndScreen
+- `src/components/` has reusable UI pieces (TitleCard, BilingualText, ChecklistItem, IconLabel, MemoryAnchor, PauseAndThink).
+- `src/theme.ts` defines colors and typography for a consistent medical-style palette.
 
-Get started with Remotion by reading the [fundamentals page](https://www.remotion.dev/docs/the-fundamentals).
+## Bilingual design approach
 
-## Help
+- Every scene includes both English and Arabic on-screen text.
+- Arabic text is rendered with `dir="rtl"` and Arabic-capable **Cairo** font via `@remotion/google-fonts`.
+- Styling keeps hierarchy consistent: English heading + Arabic companion text.
 
-We provide help on our [Discord server](https://discord.gg/6VzzNDwUwV).
+## Narration placeholders and scripts
 
-## Issues
-
-Found an issue with Remotion? [File an issue here](https://github.com/remotion-dev/remotion/issues/new).
-
-## License
-
-Note that for some entities a company license is needed. [Read the terms here](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md).
+- Audio is intentionally not bundled.
+- Each scene contains a commented placeholder such as:
+  - `/* <Audio src={staticFile('narration/scene01.mp3')} /> */`
+- Use `voiceover/` for recording prep:
+  - `voiceover/README.md`
+  - `voiceover/SceneXX_*.txt` (Arabic original + English text per scene)
