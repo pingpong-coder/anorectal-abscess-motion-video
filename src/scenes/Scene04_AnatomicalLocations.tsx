@@ -18,7 +18,18 @@ export const Scene04_AnatomicalLocations: React.FC = () => {
       {/* <Audio src={staticFile('narration/scene04.mp3')} /> */}
       <BilingualText en="Anatomical locations" ar="المواضع التشريحية" enSize={44} arSize={40} />
       <div style={{position: 'relative', flex: 1, marginTop: 20}}>
-        <svg width="680" height="430" viewBox="0 0 680 430" style={{position: 'absolute', left: 80, top: 20}}>
+        <svg
+          width="680"
+          height="430"
+          viewBox="0 0 680 430"
+          role="img"
+          aria-labelledby="anatomy-title anatomy-desc"
+          style={{position: 'absolute', left: 80, top: 20}}
+        >
+          <title id="anatomy-title">Anorectal abscess anatomical sites</title>
+          <desc id="anatomy-desc">
+            Illustration of perianal, ischioanal, intersphincteric, and supralevator abscess locations in the anorectal region.
+          </desc>
           <ellipse cx="280" cy="200" rx="170" ry="180" fill="#1e3a8a" opacity="0.5" />
           <rect x="250" y="120" width="60" height="180" rx="30" fill="#60a5fa" />
           <circle cx="280" cy="300" r="24" fill="#ef4444" />

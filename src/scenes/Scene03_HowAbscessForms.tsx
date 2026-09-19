@@ -37,7 +37,11 @@ export const Scene03_HowAbscessForms: React.FC = () => {
               >
                 <BilingualText en={step.en} ar={step.ar} enSize={22} arSize={20} align="center" />
               </div>
-              {idx < steps.length - 1 ? <div style={{fontSize: 30}}>→</div> : null}
+              {idx < steps.length - 1 ? (
+                <div aria-hidden style={{fontSize: 30}}>
+                  →
+                </div>
+              ) : null}
             </React.Fragment>
           );
         })}

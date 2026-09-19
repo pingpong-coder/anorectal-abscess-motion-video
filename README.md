@@ -55,6 +55,7 @@ FullVideo duration: **4260 frames @ 30fps (~142 seconds)**.
 - Audio is intentionally not bundled.
 - Each scene contains a commented placeholder such as:
   - `/* <Audio src={staticFile('narration/scene01.mp3')} /> */`
+- To activate a placeholder, add `Audio` and `staticFile` to that scene's Remotion import.
 - Place final recorded audio files under `public/narration/sceneXX.mp3` to match `staticFile('narration/...')`.
 - Use `voiceover/` for script prep:
   - `voiceover/README.md`

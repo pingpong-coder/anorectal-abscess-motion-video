@@ -25,7 +25,11 @@ export const Scene06_DangerousComplication: React.FC = () => {
               <div style={{border: '1px solid rgba(239,68,68,0.8)', borderRadius: 14, padding: 12, background: 'rgba(239,68,68,0.15)', opacity: alpha}}>
                 <BilingualText en={item.en} ar={item.ar} enSize={24} arSize={22} align="center" />
               </div>
-              {index < flow.length - 1 ? <div style={{fontSize: 30, color: '#ef4444', textAlign: 'center'}}>↓</div> : null}
+              {index < flow.length - 1 ? (
+                <div aria-hidden style={{fontSize: 30, color: '#ef4444', textAlign: 'center'}}>
+                  ↓
+                </div>
+              ) : null}
             </React.Fragment>
           );
         })}

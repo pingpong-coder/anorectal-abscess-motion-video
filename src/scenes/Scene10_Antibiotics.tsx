@@ -6,8 +6,8 @@ import {SceneShell} from './sceneHelpers';
 export const Scene10_Antibiotics: React.FC = () => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
-  const left = spring({frame: frame - 4, fps, config: {damping: 180}});
-  const right = spring({frame: frame - 15, fps, config: {damping: 180}});
+  const left = spring({frame: Math.max(0, frame - 4), fps, config: {damping: 180}});
+  const right = spring({frame: Math.max(0, frame - 15), fps, config: {damping: 180}});
 
   return (
     <SceneShell>
